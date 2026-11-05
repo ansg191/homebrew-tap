@@ -4,6 +4,7 @@ class Libgcrypt < Formula
   url "https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.12.4.tar.bz2"
   sha256 "d77f68f48879510e79a2f65977ccc68981781ea0923e5bdffac2a193ea3d660e"
   license all_of: ["LGPL-2.1-or-later", "GPL-2.0-or-later"]
+  revision 1
   compatibility_version 1
 
   livecheck do
