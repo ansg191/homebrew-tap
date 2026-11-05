@@ -12,6 +12,12 @@ class Libgcrypt < Formula
     regex(/href=.*?libgcrypt[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/ansg191/homebrew-tap/releases/download/libgcrypt-1.12.4_1"
+    sha256 cellar: :any, arm64_tahoe:  "23564634775eb20a2e244f0d120b17a1004100d92a39fedec293dbed25654baa"
+    sha256 cellar: :any, x86_64_linux: "223f1dbb7c72e23190b84d56963d80630fea5d56cdbc4687cb6426480b8b230c"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
