@@ -16,9 +16,9 @@ class Libgcrypt < Formula
   depends_on "libtool" => :build
   depends_on "libgpg-error"
 
-  deny_network_access!
-
   patch :DATA
+
+  deny_network_access!
 
   def install
     system "autoreconf", "--force", "--install", "--verbose"
