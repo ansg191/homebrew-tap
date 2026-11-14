@@ -10,6 +10,12 @@ class Ori < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/ansg191/homebrew-tap/releases/download/ori-0.17.0"
+    sha256                               arm64_tahoe:  "f1c78052e810facf5df44f0593419dea6727046e00d0b0bc28299ea2244fa7c8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "bfaa478aeeb709432d8449dd0ebe59a8611e5f8d44e2d0c57365243a5961b6e1"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/OpenRouterLabs/ori-releases/releases/download/cli-0.17.0-31fbdff/ori-darwin-arm64.gz"
