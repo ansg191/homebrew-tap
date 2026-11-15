@@ -6,6 +6,11 @@ class Vulnx < Formula
   license "MIT"
   head "https://github.com/projectdiscovery/vulnx.git", branch: "main"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "go" => :build
 
   deny_network_access!
