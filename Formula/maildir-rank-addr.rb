@@ -11,6 +11,14 @@ class MaildirRankAddr < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/ansg191/homebrew-tap/releases/download/maildir-rank-addr-1.4.1"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "5f068e6e0b1886986cc14b0bd7ff3bbd968db1282e75dd49848c85413e061d5a"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "0a10e84ea7407cce5d79abd13fe537edeed681a9f7b760b0b5ba8fe16bafa9d6"
+    sha256 cellar: :any_skip_relocation, arm64_linux:       "047e30dd003e6fc1e9686cf0e43e1ea829ff43726ad3b04216ba00171f1526cc"
+    sha256 cellar: :any,                 x86_64_linux:      "e5b90a48a763b5a46243c21f4a33472255df872acfe777fe094ecad9f321171a"
+  end
+
   depends_on "go" => :build
 
   deny_network_access!
