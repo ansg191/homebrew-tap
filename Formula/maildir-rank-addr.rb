@@ -6,6 +6,11 @@ class MaildirRankAddr < Formula
   license "MIT"
   head "https://github.com/ferdinandyb/maildir-rank-addr.git", branch: "master"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "go" => :build
 
   deny_network_access!
