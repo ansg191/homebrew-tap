@@ -19,7 +19,11 @@ jobs:
       matrix:
         os: [ macos-26, xcode-27 ]
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-26.04
+            container:
+              image: ghcr.io/homebrew/brew:main
+              options: --privileged
+          - os: ubuntu-26.04-arm
             container:
               image: ghcr.io/homebrew/brew:main
               options: --privileged
