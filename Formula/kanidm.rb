@@ -11,6 +11,14 @@ class Kanidm < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/ansg191/homebrew-tap/releases/download/kanidm-1.12.1"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "e7ed611e19fa48500db8df6265eb247381a869fe49fe71dea18e5874521eebd5"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "99aa0ab8efab40d2f18750413ec2be03ffd4e85a91ca8a14d6d653b40f1e7a14"
+    sha256 cellar: :any,                 arm64_linux:       "ddd0ed42dde6ccdbab883e8396d9b3e0e8b2d2770a36e8ede352d9485a5b1cf8"
+    sha256 cellar: :any,                 x86_64_linux:      "66a2c98f8bccd1b92732fb724577e624610ee3d3e65dba4c2d24793130e43db3"
+  end
+
   depends_on "rust" => :build
 
   on_linux do
