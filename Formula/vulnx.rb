@@ -12,11 +12,11 @@ class Vulnx < Formula
   end
 
   bottle do
-    root_url "https://github.com/ansg191/homebrew-tap/releases/download/vulnx-2.0.2"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "5882d529037ae71d7a9b9b677989ba78c57ec9e0363ba70d7db1683226734dbf"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "17439c82f6fc6458f81d8cf77d013d993c68fd4222b38bd99b880dee44e13e67"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "448363772cb094696864a39e0142f7ac414f67a374c3475437914f20efeeb3ae"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:      "4f47e210fc65f91c1c53b0cbdc2057ab68a0c074bfde21be90979326ba645485"
+    root_url "https://github.com/ansg191/homebrew-tap/releases/download/vulnx-2.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "d22a05a3655bcab04a8fbaabc6445ea5d9012ffd1fe00df54cca06dad1199fc9"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "5a9086a59b1618d0c90358be6712de253b12f3bbb19615bc6d01f3bd59921383"
+    sha256 cellar: :any_skip_relocation, arm64_linux:       "6f7ec6585ca8b7b482fccfa783f2803d68daf93e1a332c43385b217a5166c52d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:      "cee001534e96e7bab8d4399a1f4a798c5f300f7a8943993426cc03c268105b58"
   end
 
   depends_on "go" => :build
