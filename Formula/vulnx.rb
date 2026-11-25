@@ -1,8 +1,8 @@
 class Vulnx < Formula
   desc "Modern CLI for exploring vulnerability data"
   homepage "https://github.com/projectdiscovery/vulnx"
-  url "https://github.com/projectdiscovery/vulnx/archive/refs/tags/v2.0.2.tar.gz"
-  sha256 "d3954dbcbee35fc7ff5417d3314949d7f7e1cf4939082a153515ce58b51ab7a6"
+  url "https://github.com/projectdiscovery/vulnx/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "10255d08ee85fec2eac021508734302648fbdf375152689356367947dc366ab1"
   license "MIT"
   head "https://github.com/projectdiscovery/vulnx.git", branch: "main"
 
