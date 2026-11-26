@@ -1,8 +1,8 @@
 class Kanidm < Formula
   desc "Client tools for the Kanidm identity management platform"
   homepage "https://kanidm.com/"
-  url "https://github.com/kanidm/kanidm/archive/refs/tags/v1.12.1.tar.gz"
-  sha256 "d31453a6d78b774eb4109622ac13eada112ba144f2772358920c7c28e9be1fc1"
+  url "https://github.com/kanidm/kanidm/archive/refs/tags/v1.12.2.tar.gz"
+  sha256 "4ed023d39ddf304cd24d829cd6c5b90689d8e50428a043c8033fc75e813a5b47"
   license "MPL-2.0"
   head "https://github.com/kanidm/kanidm.git", branch: "master"
 
